@@ -1,0 +1,13 @@
+@charset "UTP-8";
+
+html {font-size: 62.5%;}
+
+*{margin: 0; padding: 0; box-sizing: border-box; }
+
+a {text-decoration: none; color: inherit;}
+ul, ol {list-style: none;}
+
+img {vertical-align: middle;}
+
+legend {display: none;}
+fieldset {border: 0;}

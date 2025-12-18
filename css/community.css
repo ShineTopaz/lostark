@@ -1,0 +1,48 @@
+@charset "utf-8";
+.community {padding-top: 50px; }
+.community .inner {max-width: 1345px; margin: 0 auto;}
+.community .inner>h2 {font-size: 4rem; font-weight: 600; margin-top: 50px;}
+
+@media (max-width : 1500px) {
+    .community {margin-top: 50px;}
+}
+
+.community .community_tab {width: 100%; display: flex; margin-top:100px ; border-top: 5px solid #DECAAB;}
+.community .community_tab li {width: calc(100% / 3); text-align: center; padding: 25px 0; background: #4b5464; border-right: 1px solid #999; font-size: 2rem; font-weight: 600; color: #fff; cursor: pointer; margin-bottom:50px;}
+.community .community_tab li:last-child {border-right: none;}
+
+.community .community_tab li.active { background: #2c313a;}
+
+.search {display: flex; align-items: center; justify-content: right; position: relative; margin-bottom: 50px;}
+.search fieldset {display: flex; align-items: center;}
+.search input[type="text"]{ border: 3px solid #2c313a; background: transparent; width: 400px; height: 50px; font-size: 2rem; outline: none; padding: 0 10px; color: #2c313a;}
+.search input[type="button"] {width: 50px; height: 50px; background: url(../image/sub/search-sm.png) center no-repeat #1a1e25; border: none;}
+ 
+
+.community_depth2 {display: flex; width: 100%; font-size: 1.8rem;background: #eee; border-radius: 20px 20px 0 0; overflow: hidden; }
+.community_depth2 p {cursor: pointer; color: #555; padding: 10px 20px;}
+.community_depth2 p.active {font-weight: 600; color: #fff; background: #4b5464;}
+
+.community_list li a{display: flex ;  align-items: center; justify-content: space-between; font-size: 1.8rem; padding: 15px 10px; border-bottom: 1px solid #000;}
+.community_list li:first-child a {border-top: 1px solid #000;}
+.community_list li .list_left {display: flex; align-items: center; gap: 30px;}
+.community_list li .list_left p {background: #d9d9d9; border-radius: 20px; padding: 5px 15px;}
+.community_list li .list_right {display: flex; width: 200px; align-items: center; justify-content: space-between }
+.community_list li .list_right::before {content: ""; background: url(../image/sub/eye.png) center; width: 24px; height: 24px; display: inline-block; margin-right: 10px;}
+.community_list li .list_right div:first-child {margin-right: 20px;}
+
+
+
+.page {margin: 20px 0 100px;}
+.page ul {display: flex; gap: 10px; justify-content: center;}
+
+.page ul li button {width: 30px; height: 30px; border: none; cursor: pointer;}
+
+@media (max-width : 580px) {
+.community_list li .list_right .view {display: none;}
+.community_list li .list_right::before {display: none;}
+}
+
+@media (max-width : 550px) {
+    .page ul li:nth-child(n+8):nth-child(-n+12) {display: none;}
+}

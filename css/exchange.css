@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.exchange {background:  linear-gradient(#1b2533,#1E2734);}
+.exchange .inner {max-width: 1470px; margin: 0 auto; display: grid; grid-template-columns: 20% 80%; grid-template-areas: "a a" "b c"; gap: 25px 0px; }
+
+.exchange_top {grid-area: a;}
+.exchange_left {grid-area: b; width: 100%; border-top: 1px solid #505C70;}
+.exchange_right {grid-area: c; width: 100%;  border-top: 1px solid #505C70;}
+
+.exchange_top {width: 100%; display: flex; padding: 0px 10px; align-items: center; margin-top: 50px; justify-content: right;}
+
+.exchange_top form { height: 100%;}
+.exchange_top fieldset {display: flex; align-items: center;}
+.exchange_top input {border: 0; outline-style: none;}
+.exchange_top input[type = "text"] {padding: 0 5px; width: 250px; height: 50px; background: #555555; font-size: 1.8rem; color: #fff;}
+.exchange_top input[type = "button"] {background: #000 url(../image/sub/search-sm.png) center no-repeat; width: 50px; height: 50px;} 
+
+
+.exchange_left {background: linear-gradient(#1E2734,#414D5D); color: #fff; height:919px; overflow: scroll; scrollbar-width:none;}
+.exchange_left>ul>li>p {font-size: 1.7rem; font-weight: 600; padding: 10px 10px; position: relative; cursor: pointer;}
+.exchange_left>ul>li>p::after {content: ""; background: url(../image/sub/sub_exchange/chevron-down.png) center no-repeat; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px;}
+.exchange_left>ul>li:first-child p:after {display: none;}
+.exchange_left .menu_depth2 {font-size: 1.5rem;  display: none;}
+.exchange_left .menu_depth2 li p {padding: 5px 15px; cursor: pointer;}
+
+
+.exchange_right tr td { text-align: center;}
+.exchange_right .prd {font-size: 1.7rem; color: #fff; background:linear-gradient(#505C70,#3f495a ) ;position: relative;}
+.exchange_right .prd th, .exchange_right .prd td {padding: 15px 0; border-right: 1px solid #2f3a50;}
+.exchange_right .prd th {display: flex; align-items: center; gap: 10px; padding: 5px; font-weight: 400;}
+.exchange_right .prd:nth-child(1) th::before {content: ""; display: inline-block; background: url(../image/sub/sub_exchange/exchange_1.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(2) th::before {content: ""; display: inline-block; background: url(../image/sub/sub_exchange/exchange_2.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(3) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_3.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(4) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_4.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(5) th::before {content: ""; display: inline-block;background: url(../image/sub/sub_exchange/exchange_5.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(6) th::before {content: ""; display: inline-block; background: url(../image/sub/sub_exchange/exchange_6.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(7) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_7.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(8) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_8.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(9) th::before {content: ""; display: inline-block; background: url(../image/sub/sub_exchange/exchange_9.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(10) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_10.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(11) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_11.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(12) th::before {content: ""; display: inline-block; background: url(../image/sub/sub_exchange/exchange_12.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(13) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_13.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(14) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_14.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+.exchange_right .prd:nth-child(15) th::before {content: ""; display: inline-block;  background: url(../image/sub/sub_exchange/exchange_15.png) center no-repeat; width: 48px; height: 48px; background-size: 100%;}
+
+.exchange_right .prd td {position: relative;}
+.exchange_right .prd td:after {content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 48px; height:48px; display: inline-block; background: url(../image/sub/sub_exchange/gold.png) center no-repeat;}
+.exchange_right .prd td:last-child::after {display: none;}
+
+.exchange_right thead {background:  linear-gradient(#1E2734,#2d3846); border: 0; font-size: 2rem; color: #fff;}
+.exchange_right thead th {padding: 10px 20px; width: 300px; border-right: 1px solid #505C70;}
+.exchange_right thead th:last-child {border: 0;}
+.exchange_right table {border-spacing: 0;}
+
+
+
+
+
+.page {padding: 20px 0 100px;}
+.page ul {display: flex; gap: 10px; justify-content: center;}
+
+.page ul li button {width: 30px; height: 30px; border: none; cursor: pointer;}
+
+.buy-float {
+    display: none;
+    position: absolute;
+    background: #1a2536;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .buy-float .cost {
+    font-size: 1.5rem;   /* 원하는 크기(px, em, rem 다 가능) */
+    font-weight: 400; /* 굵게 */
+    padding: 5px 0;
+}
+
+
+.buy-float input[type="number"] {
+    width: 220px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+.buy-float input[type="button"] {
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

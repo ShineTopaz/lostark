@@ -1,0 +1,130 @@
+@charset "UTF-8";
+*{scroll-behavior: smooth;}
+
+.guide {background: linear-gradient(#1F2A39,#060606,#1F2A39);}
+.guide .inner {max-width : 1520px; margin: 0 auto; padding: 10px;}
+.guide h2 {font-size: 3rem; font-weight: 500; color: #fff;}
+
+@media (max-width : 1500px) {
+    .guide {padding-top: 50px ;}
+}
+
+.guide_top {display: flex; align-items: center; justify-content: space-between; margin-top: 30px;}
+.guide_top fieldset {display: flex;  align-items: center;}
+.guide_top input[type="text"] {width: 450px; height: 60px; font-size: 2rem; outline-style: none;}
+.guide_top input[type="button"] {width: 60px; height: 60px; border: transparent; background:#000 url(../image/sub/sub_guide/search.png) center no-repeat;}
+
+@media (max-width : 850px) {
+   .guide_top {display: block; text-align: center; margin: 30px auto;} 
+   .guide_top h2 {margin-bottom: 30px;}
+   .guide_top fieldset {justify-content: center;}
+   .guide_top input[type="text"] {width: 80%}
+}
+
+/* recommend */
+.guide .recommend {display: grid; justify-content: center; align-items: stretch; grid-template-columns: 35% 35%; margin-top: 50px;}
+.recommend_txt li {display: block; font-size: 2rem; padding: 15px 30px; border-bottom: 1px solid #eee; cursor: pointer; background: #fff; }
+.recommend_txt li.active {background: #2c313a; color: #fff;}
+.recommend_txt li:last-child {border-bottom: 0;}
+
+.recommend_img li {display: none; width: 100%; height: 100%;}
+.recommend_img li.active {display: block;}
+.recommend_img a {width: 100%;}
+.recommend_img a img {width:100%; height: 100%; object-fit: cover;}
+
+@media (max-width : 850px) {
+    .guide .recommend {grid-template-columns: 45% 45%;}
+}
+@media (max-width : 700px) {
+    .guide .recommend {display: block;}
+}
+
+/* new_guide */
+.new_guide {margin: 50px 0 ;}
+.new_guide h2 {margin-bottom: 30px;}
+.new_guide ul {display: flex; gap: 100px; flex-wrap: wrap; justify-content: space-around;}
+
+.new_guide ul li {position: relative; overflow: hidden; width: calc((100% - 200px) / 3) ;}
+.new_guide ul li img {width: 100%; height: 100%; transition: all 0.5s;}
+.new_guide ul li:hover img{scale: 1.1;}
+.new_guide ul li .guide_txt { position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px 0; text-align: center; color: #fff; font-size: 1.8rem; background: rgba(0,0,0,0.5);}
+
+@media (max-width : 1400px) {
+    .new_guide ul {gap: 50px;}
+    .new_guide ul li {width: calc((100% - 100px) / 3) ;}
+}
+@media (max-width : 1000px) {
+    .new_guide ul {gap: 20px 10px;}
+    .new_guide ul li {width: calc((100% - 10px) / 2) ;}
+}
+
+/* nav */
+
+
+.btn {position: fixed; left: 10px; bottom: 10px; margin-right: 10px; text-align: center; }
+
+/* guide_menu_btn */
+
+.guide_menu_btn {padding : 25px; background: #2C313A url(../image/sub/sub_guide/menu.png) center no-repeat; background-size: 0.8; font-size: 0; border-radius: 50%; cursor: pointer; margin-bottom: 10px;}
+
+.guide_menu_btn.close {background: #2C313A url(../image/sub/sub_guide/x-close.png) center no-repeat;}
+
+/* go-top */
+.go-top {margin-bottom: 35px;}
+.go-top a {padding: 25px; background: #2C313A url(../image/sub/sub_guide/up-double.png) center no-repeat; border-radius:  50%; font-size: 0;  }
+
+/* guide_menu */
+
+.guide_menu {background: #2c313a; overflow-y: scroll; scrollbar-width: none; position: fixed; right:-100%; bottom: 0; z-index: 1000; height: calc(100% - 80px); width: 17.5%; padding: 5px;}
+.guide_menu>p { font-size: 0; width: 158px; height: 46px; background: url(../image/sub/sub_guide/logo_g.png) no-repeat center/cover; margin: 20px auto; }
+
+
+@media (max-width : 1500px) {
+    .guide_menu {height: 100%;}
+}
+@media (max-width : 1300px) {
+    .guide_menu {width: 20%;}
+}
+@media (max-width : 1100px) {
+    .guide_menu {width: 30%;}
+}
+@media (max-width : 700px) {
+    .guide_menu {width: 40%;}
+}
+
+.guide_menu>ul>li {border-bottom:  1px solid #ccc; padding : 10px 0;}
+.guide_menu>ul>li:first-child {border-top: 1px solid #ccc;}
+
+
+
+.guide_menu>ul>li>p {color: #BD9C7C; font-size: 2rem; padding: 10px; display:block; position: relative;}
+.guide_menu>ul>li>p::after {content: ""; padding: 10px; background: url(../image/sub/sub_guide/down.png) no-repeat center; display: block; position: absolute; top: 50%; right: 0px; transform: translateY(-50%); cursor: pointer;}
+
+.guide_menu .guide_depth2 {font-size: 1.5rem; color: #fff; display: none;}
+.guide_menu .guide_depth2 li a {padding : 5px 20px; display: inline-block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

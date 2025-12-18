@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로스트아크</title>
+
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/common.css"> <!-- header/footer 관련 css -->
+    <link rel="stylesheet" href="../css/sub_common.css"> <!-- header/footer 관련 css -->
+    <link rel="stylesheet" href="../css/info.css"> <!-- main section -->
+
+    <!-- js -->
+    <!-- defer:순서를 후순위로 -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery.fullPage.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="../js/common.js"></script> <!-- header/footer -->
+    <script defer src="../js/sub_common.js"></script> <!-- header/footer -->
+    <script defer src="../js/info.js"></script> <!-- main section -->
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="mb_menu"></div>
+            <h1><a href="../index.html"><img src="../image/common/logo_w.png" alt="lostark"></a></h1>
+            <ul class="gnb">
+                <li><a href="notice.html">새소식</a>
+                    <ul class="depth2">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="notice.html">이벤트</a></li>
+                        <li><a href="notice.html">리샤의 편지</a></li>
+                    </ul>
+                </li>
+                <li><a href="info.html">게임정보</a>
+                    <ul class="depth2">
+                        <li><a href="info.html">전투정보실</a></li>
+                        <li><a href="info.html">세계관</a></li>
+                    </ul>
+                </li>
+                <li><a href="guide.html">가이드</a>
+                    <ul class="depth2">
+                        <li><a href="guide.html">게임가이드</a></li>
+                        <li><a href="guide.html">아이템사전</a></li>
+                    </ul>
+                </li>
+                <li><a href="community.html">커뮤니티</a>
+                    <ul class="depth2">
+                        <li><a href="community.html">커뮤니티</a></li>
+                        <li><a href="community.html">갤러리</a></li>
+                        <li><a href="community.html">스타일북</a></li>
+                    </ul>
+                </li>
+                <li><a href="exchange.html">거래소</a>
+                    <ul class="depth2">
+                        <li><a href="exchange.html">거래소</a></li>
+                        <li><a href="exchange.html">경매장</a></li>
+                    </ul>
+                </li>
+                <li><a href="coupon.html">웹샵</a>
+                    <ul class="depth2">
+                        <li><a href="coupon.html">SHOP</a></li>
+                        <li><a href="coupon.html">캐시</a></li>
+                        <li><a href="coupon.html">쿠폰</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html">고객센터</a>
+                    <ul class="depth2">
+                        <li><a href="../index.html">FAQ</a></li>
+                        <li><a href="../index.html">신고센터</a></li>
+                        <li><a href="../index.html">보안서비스</a></li>
+                        <li><a href="../index.html">클라이언트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="user"><a href="#"><img src="../image/common/user-01.png" alt="user"></a></div>
+            <p class="login">Login</p>
+            <div class="gamestart">GameStart</div>
+            <div class="mb_gnb">
+                <ul class="mgnb">
+                    <li><a href="notice.html">새소식</a>
+                        <ul class="m_depth2">
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="notice.html">이벤트</a></li>
+                            <li><a href="notice.html">리샤의 편지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">게임정보</a>
+                        <ul class="m_depth2">
+                            <li><a href="info.html">전투정보실</a></li>
+                            <li><a href="info.html">세계관</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guide.html">가이드</a>
+                        <ul class="m_depth2">
+                            <li><a href="guide.html">게임가이드</a></li>
+                            <li><a href="guide.html">아이템사전</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="community.html">커뮤니티</a>
+                        <ul class="m_depth2">
+                            <li><a href="community.html">커뮤니티</a></li>
+                            <li><a href="community.html">갤러리</a></li>
+                            <li><a href="community.html">스타일북</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="exchange.html">거래소</a>
+                        <ul class="m_depth2">
+                            <li><a href="exchange.html">거래소</a></li>
+                            <li><a href="exchange.html">경매장</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="coupon.html">웹샵</a>
+                        <ul class="m_depth2">
+                            <li><a href="coupon.html">SHOP</a></li>
+                            <li><a href="coupon.html">캐시</a></li>
+                            <li><a href="coupon.html">쿠폰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html">고객센터</a>
+                        <ul class="m_depth2">
+                            <li><a href="../index.html">FAQ</a></li>
+                            <li><a href="../index.html">신고센터</a></li>
+                            <li><a href="../index.html">보안서비스</a></li>
+                            <li><a href="../index.html">클라이언트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mb_menu_close"></div>
+                <div class="mb_menu_logo"></div>
+            </div>
+        </div>
+        <div class="depth2_bg"></div>
+    </header><!-- /.header -->
+
+
+    <section class="story">
+        <div class="wrap_title">세계관</div>
+        <ul class="story_txt">
+            <li><a href="#">Ⅰ<br>여명의 시대<br><span>DAWN ERA</span></a></li>
+            <li><a href="#">Ⅱ<br>어둠의 왕좌<br><span>THRONE OF DARKNESS</span></a></li>
+            <li><a href="#">Ⅲ<br>사슬전쟁<br><span>CHAIN WAR</span></a></li>
+            <li><a href="#">Ⅳ<br>개척의 500년<br><span>EXPLOITATION PERIOD</span></a></li>
+            <li><a href="#">Ⅴ<br>의지를 계승하는자<br><span>SUCCESSOR</span></a></li>
+        </ul>
+        <ul class="story_img">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <section class="class">
+        <div class="inner">
+            <div class="class_title">클래스</div>
+            <div class="swiper class_list">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_1.png" alt="">
+                            <div class="slide_txt">전사(남)</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_2.png" alt="">
+                            <div class="slide_txt">전사(여)</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_3.png" alt="">
+                            <div class="slide_txt">무도가(남)</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_4.png" alt="">
+                            <div class="slide_txt">무도가(여)</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_5.png" alt="">
+                            <div class="slide_txt">헌터(남)</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_6.png" alt="">
+                            <div class="slide_txt">헌터(여)</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_7.png" alt="">
+                            <div class="slide_txt">마법사</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_8.png" alt="">
+                            <div class="slide_txt">암살자</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_info_class_9.png" alt="">
+                            <div class="slide_txt">스페셜리스트</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contents">
+        <div class="inner">
+            <div class="contents_title">콘텐츠</div>
+            <div class="swiper contents_list">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_content_1.png" alt="">
+                            <div class="slide_txt">카제로스레이드</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_content_2.png" alt="">
+                            <div class="slide_txt"> 군단장레이드</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_content_3.png" alt="">
+                            <div class="slide_txt">가디언토벌</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_content_4.png" alt="">
+                            <div class="slide_txt">수집과 모험</div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#"><img src="../image/sub/sub_info/sub_content_5.png" alt="">
+                            <div class="slide_txt">항해</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer_logo">
+                <img src="../image/common/footer_logo.png" alt="logo">
+            </div>
+            <div class="footer_txt">
+                <div class="footer_left">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">운영정책</a></li>
+                        <li><a href="#">이벤트&UGC규약</a></li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li><a href="#">게임이용등급</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">PC버전</a></li>
+                        <li><a href="#">오픈 API</a></li>
+                    </ul>
+                    <div class="copy">© Smilegate RPG All rights reserved.</div>
+                </div>
+                <div class="footer_right">
+                    <ul>
+                        <li>회사명 ㈜스마일게이트 알피지 대표이사 지원길</li>
+                        <li>사업자등록번호 220-88-29249</li>
+                        <li>
+                            주소 경기도 성남시 분당구 판교로 344, 6,7층(삼평동, 스마일게이트캠퍼스)</li>
+                        <li>
+                            통신판매업 신고번호 제2017-성남분당-0904호</li>
+                        <li>
+                            T : 1670-1373 E : lostark@smilegate.com F : 031-627-0400</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

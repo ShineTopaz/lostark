@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.sub_banner {max-height: 370px;}
+.sub_banner a img {object-fit: contain; object-position: center;}
+
+@media (max-width : 1500px) {
+    .sub_banner {display: none;}
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
